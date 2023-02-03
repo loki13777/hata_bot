@@ -1,6 +1,8 @@
 from aiogram import Bot, Dispatcher, executor, types, exceptions
 import time
 import asyncio
+
+import config
 import parser_kufar
 import parser_onliner
 import parser_irr
@@ -8,7 +10,7 @@ import parser_realt
 import json
 
 
-bot = Bot(token='5408163447:AAHb3bdUD3O7fWME2a3bISKvHC_UIoxPr6c')
+bot = Bot(token=config.TOKEN)
 dp = Dispatcher(bot)
 
 
